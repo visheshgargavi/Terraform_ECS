@@ -80,10 +80,10 @@ resource "aws_ecs_service" "aws-ecs-service" {
   force_new_deployment = true
 
   network_configuration {
-    subnets          = [ "subnet-62f46819" ]
+    subnets          = [ var.subnet-id-1 ]
     assign_public_ip = true
     security_groups = [
-      "sg-551ceb2e"
+      var.security-group
     ]
   }
 

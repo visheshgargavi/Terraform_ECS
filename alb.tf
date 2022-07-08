@@ -24,8 +24,8 @@ resource "aws_alb" "application_load_balancer" {
   name               = "${var.app_name}-${var.app_environment}-alb"
   internal           = false
   load_balancer_type = "application"
-  subnets            = [ "subnet-62f46819","subnet-1b723857" ]
-  security_groups    = ["sg-551ceb2e"]
+  subnets            = [ var.subnet-id-1, var.subnet-id-2 ]
+  security_groups    = [var.security-group]
 
   tags = {
     Name        = "${var.app_name}-alb"
@@ -70,7 +70,7 @@ resource "aws_lb_target_group" "target_group" {
   port        = "80"
   protocol    = "HTTP"
   target_type = "ip"
-  vpc_id      = "vpc-3fb94654"
+  vpc_id      = var.vpc-id
 
   health_check {
     healthy_threshold   = "3"

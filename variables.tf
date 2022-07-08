@@ -65,3 +65,20 @@ variable "database_name" {
 variable "database_password" {
   description = "Database Password"
 }
+
+variable "vpc-id" {
+  description = "VPC ID"
+}
+
+variable "subnet-id-1" {
+  description = "Subnet ID"
+}
+
+variable "subnet-id-2" {
+  description = "Subnet ID"
+}
+
+variable "security-group" {
+  description = "Security Group"
+}
+
