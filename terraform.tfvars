@@ -1,6 +1,6 @@
 aws_region        = "ap-south-1"
-aws_access_key    = "AKIARJBVY5JEEPVTZ4RF"
-aws_secret_key    = "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"
+aws_access_key    = "AKIARJBVZ4RF"
+aws_secret_key    = "rlkbFkeDNvzKM+czxs3"
 aws_key_pair_name = "awskey"
 
 availability_zones = ["ap-south-1a", "ap-south-1b"]

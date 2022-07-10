@@ -1,7 +1,7 @@
 # Terraform_ECS
 # Resources
 
-The application I needed to deploy is a monolithic NodeJS application, so, to deploy and make it scalable I decided to use containers with an autoscaling tool to scale the application based on CPU and Memory usage. To build this environment on AWS I used the services listed below:
+The application I needed to deploy is a monolithic nginx application, so, to deploy and make it scalable I decided to use containers with an autoscaling tool to scale the application based on CPU and Memory usage. To build this environment on AWS I used the services listed below:
 
     1. Elastic Container Registry
     2. Elastic Container Service
