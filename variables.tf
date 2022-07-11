@@ -41,41 +41,16 @@ variable "app_environment" {
   description = "Application Environment"
 }
 
-variable "cidr" {
-  description = "The CIDR block for the VPC."
-  default     = "10.0.0.0/16"
-}
-
-variable "public_subnets" {
-  description = "List of public subnets"
-}
-
-variable "private_subnets" {
-  description = "List of private subnets"
-}
-
-variable "availability_zones" {
-  description = "List of availability zones"
-}
-
-variable "database_name" {
-  description = "Database Name"
-}
-
-variable "database_password" {
-  description = "Database Password"
-}
-
 variable "vpc-id" {
-  description = "VPC ID"
+  description = "VPC ID (you can use default vpc id)"
 }
 
 variable "subnet-id-1" {
-  description = "Subnet ID"
+  description = "Public Subnet ID 1 required for ALB"
 }
 
 variable "subnet-id-2" {
-  description = "Subnet ID"
+  description = "Public Subnet ID 2 required for ALB"
 }
 
 variable "security-group" {

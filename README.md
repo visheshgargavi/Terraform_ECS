@@ -12,19 +12,12 @@ The application I needed to deploy is a monolithic nginx application, so, to dep
 # Required Parameteres
 ```hcl
 aws_region        = "ap-south-1"
-aws_access_key    = "AKIARJBVY5JEE4RF"
-aws_secret_key    = "rlkbFkeDNvzKM+c9te2gH7xz3"
+aws_access_key    = "<aws-access-key>"
+aws_secret_key    = "<aws-secret-key>"
 aws_key_pair_name = "awskey"
-
-availability_zones = ["ap-south-1a", "ap-south-1b"]
-public_subnets     = ["10.10.100.0/24", "10.10.101.0/24"]
-private_subnets    = ["10.10.0.0/24", "10.10.1.0/24"]
 
 app_name        = "nginx"
 app_environment = "production"
-
-database_name     = "nginxdatabase"
-database_password = "database-password"
 
 vpc-id         = "vpc-3fb94654"
 subnet-id-1    = "subnet-62f46819"
